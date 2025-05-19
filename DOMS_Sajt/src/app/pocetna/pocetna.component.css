@@ -1,0 +1,7 @@
+body{
+
+  background-image:url("../../assets/slike/pozadina.jpeg");
+  background-size:contain;
+  background-position: top;
+  background-color: rgba(0, 255, 255, 0.168);
+}
