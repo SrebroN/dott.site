@@ -1,7 +1,135 @@
-body{
-
-  background-image:url("../../assets/slike/pozadina.jpeg");
-  background-size:contain;
+body {
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-size: contain;
   background-position: top;
-  background-color: rgba(0, 255, 255, 0.168);
+  background-color: #e7e0d0;
 }
+
+.h4 {
+  font-size: large;
+}
+
+.img img#top_image {
+  display: flex;
+  width: 100%;
+}
+
+.top_text {
+  font-size: medium;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  top: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 2%;
+
+  width: 100%;
+}
+
+.top_text_each {
+  display: grid;
+  width: 25%;
+  text-align: justify;
+
+}
+
+
+
+.quote {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+  bottom: 0;
+  width: 100%;
+  text-align: justify;
+}
+
+.images_ {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  bottom: 0;
+  width: 100%;
+}
+
+.images_each {
+  display: grid;
+
+}
+.middle_text_heading{
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align: center;
+  width: 100%;
+}
+.middle_text {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+  text-align: justify;
+  width: 100%;
+}
+
+.bottom_images {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom_images_each {
+  display: grid;
+  width: 100px;
+}
+
+.bottom_grid_text {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding-left: 4%;
+  padding-right: 4%;
+  bottom: 0;
+  width: 100%;
+}
+
+.bottom_grid_text_left {
+  display: grid;
+  text-align: left;
+  width:25%;
+}
+.bottom_grid_text_middle{
+  display: grid;
+  text-align: center;
+  width:25%;
+}
+.bottom_grid_text_right {
+  display: grid;
+  text-align: right;
+  width:25%;
+}
+
