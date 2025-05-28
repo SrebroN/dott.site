@@ -12,9 +12,40 @@ body {
   font-size: large;
 }
 
-.img img#top_image {
+.container {
+  position: relative;
   display: flex;
+}
+
+.container img#top_image {
   width: 100%;
+}
+
+.top_left_text {
+  color: #fff;
+  font-size: 2pc;
+  position: absolute;
+  left: 10%;
+  top: 40%;
+}
+
+.top_left_text a {
+  font-size: 1.3pc;
+}
+
+.top_left_text a:link,
+.top_left_text a:visited,
+.top_left_text a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bot_left_text {
+  position: absolute;
+  color: #fff;
+  font-size: smaller;
+  left: 10%;
+  bottom: 3%;
 }
 
 .top_text {
@@ -22,13 +53,12 @@ body {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   margin: 0;
   top: 0;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
   padding-top: 2%;
-
   width: 100%;
 }
 
@@ -36,22 +66,8 @@ body {
   display: grid;
   width: 25%;
   text-align: justify;
-
 }
 
-
-
-.quote {
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding-left: 4%;
-  padding-right: 4%;
-  bottom: 0;
-  width: 100%;
-  text-align: justify;
-}
 
 .images_ {
   box-sizing: border-box;
@@ -59,43 +75,119 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
   bottom: 0;
   width: 100%;
 }
 
 .images_each {
   display: grid;
+  position: relative;
 
 }
-.middle_text_heading{
-  box-sizing: border-box;
-  display: flex;
-  margin: 0;
-  padding-left: 4%;
-  padding-right: 4%;
-  text-align: center;
-  width: 100%;
+
+.images_text {
+  color: #fff;
+  font-size: small;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 .middle_text {
   box-sizing: border-box;
+  justify-content: center;
+  text-align: justify;
   display: flex;
   margin: 0;
-  padding-left: 4%;
-  padding-right: 4%;
-  text-align: justify;
+  padding-left: 10%;
+  padding-right: 10%;
   width: 100%;
+}
+
+.middle_text p {
+  display: block;
+  text-align: center;
+}
+
+.middle_text p:nth-of-type(2){
+  font-weight: bold;
+}
+
+.bottom_container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../assets/slike/dog_wallpaper.jpg');
+  background-size: 100%;
+}
+
+.bottom_image_section {
+  background-color: rgba(255, 255, 255, 0.6);
+  flex: 1;
+  overflow: hidden;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 2.5%;
+}
+
+.bottom_image_section img {
+  width: auto;
+  height: 100%;
+  object-position: center;
+  display: block;
+}
+
+.bottom_text_section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* or 'flex-start' if you want top alignment */
+  padding: 5%10%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.bottom_text_section h1 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.bottom_text_section p {
+  font-size: 1em;
+  margin-bottom: 2em;
+  text-align: justify;
+}
+
+.bottom_text_section button {
+  align-self: flex-start;
+  padding: 0.5em 1.5em;
+  background-color: #2f1d0e;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+.top_left_text a {
+  font-size: 1.3pc;
 }
 
 .bottom_images {
+  border-top:100px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
   bottom: 0;
   width: 100%;
 }
@@ -111,8 +203,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding-left: 4%;
-  padding-right: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
   bottom: 0;
   width: 100%;
 }
@@ -120,16 +212,17 @@ body {
 .bottom_grid_text_left {
   display: grid;
   text-align: left;
-  width:25%;
+  width: 25%;
 }
-.bottom_grid_text_middle{
+
+.bottom_grid_text_middle {
   display: grid;
   text-align: center;
-  width:25%;
+  width: 25%;
 }
+
 .bottom_grid_text_right {
   display: grid;
   text-align: right;
-  width:25%;
+  width: 25%;
 }
-

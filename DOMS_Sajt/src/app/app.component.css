@@ -85,7 +85,8 @@ a:active {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  left: 0;
+  padding-left: 5%;
+  padding-right:5%;
   bottom: 0;
   width: 100%;
 }
@@ -105,4 +106,5 @@ a:active {
   color: #ffffff;
   display: grid;
   margin-top: 5px;
+  text-align: right;
 }
