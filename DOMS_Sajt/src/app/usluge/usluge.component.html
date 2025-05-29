@@ -18,38 +18,13 @@
       <p>Projektovanje objekta obuhvata nekoliko faza, pri čemu svaka podrazumeva izradu određene vrste projektne
         dokumentacije. U skladu s tim, nudimo izradu sledećih dokumentacionih celina:</p>
       <ol>
-        <li>
-          <h3>Usluga izrade IDR - Idejnog rešenja</h3>
-        </li>
-        <li>
-          <h3>
-            Usluga izrade IDP - Idejnog projekta
-          </h3>
-        </li>
-        <li>
-          <h3>
-            Usluga izrade projekta za građevinsku dozvolu (PGD)
-          </h3>
-        </li>
-        <li>
-          <h3>
-            Usluga izrade projekta za izvođenje (PZI)
-          </h3>
-        </li>
-        <li>
-          <h3>
-            Usluga izrade projekta izvedenog objekta (PIO)
-          </h3>
-        </li>
-        <li>
-          <h3>
-            Usluga upravljanja i nadzora nad izvođenjem
-          </h3>
-        </li>
-        <li>
-          <h3>
-            Usluga izrade i podnošenja kompletne dokumentacije - od idejnog rešenja do upotrebne dozvole
-          </h3>
+        <li *ngFor="let item of items;let i=index">
+          <div (click)="toggle(i)">
+            <h3>{{item.question}}</h3>
+          </div>
+          <div [@expandCollapse]="activeIndex === i ? 'expanded' : 'collapsed'" class="faq-answer">
+            {{item.answer}}
+          </div>
         </li>
       </ol>
     </div>
@@ -59,72 +34,15 @@
     <div class="bottom_text_section">
       <h1>Projekat enterijera</h1>
       <ol>
-        <li>
-          <h3>Konsultacija</h3>
-          <ul>
-            <li> Izlazak na teren - do 2 sata </li>
-            <li> Dva plana sa rasporedom nameštaja</li>
-          </ul>
-          * Moguće i online konsultacije u dogovoru sa klijentom, ukoliko je omogućena osnova prostora;
-        </li>
-        <li>
-          <h3>Dekor</h3>
-          <ul>
-            <li>Dizajn bez renoviranja</li>
-            <li>Izlazak na teren</li>
-            <li>Moodboard (boje, materijali, teksture)</li>
-            <li>Odabir tekstila (zavese, dekorativni jastuci, prekrivači)</li>
-            <li>Odabir dekoracije (vaze, posuđe, tepisi)</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Idejni projekat enterijera</h3>
-          <ul>
-            <li> Izlazak na teren</li>
-            <li> Moodboard</li>
-            <li> 3d vizualizacija</li>
-            <li> Dve opcije sa rasporedom nameštaja</li>
-            <li> Celokupan projekat enterijera</li>
-          </ul>
-        </li>
-        <li>
-          <h3> Kompletan dizajn enterijera</h3>
-          <ul>
-            <li>Izlazak na teren</li>
-            <li>Moodboard</li>
-            <li>3d vizualizacija</li>
-            <li>Dve opcije sa rasporedom nameštaja</li>
-            <li>Celokupan projekat enterijera (Osnova rušenja, osnova zidanja, osnova podova, osnova plafona, osnova
-              rasvete
-              i
-              prekidača, osnova utičnica, osnova vodovoda i sanitarnih uređaja, izgledi zidova, specifikacija završnih
-              materijala (tapete i pločice), specifikacija sanitarne opreme, specifikacija rasvete, specifikacija
-              tapaciranog
-              nameštaja)
-            <li>Projekat nameštaja po meri (stolarski crteži)</li>
-          </ul>
-        </li>
-        <li>
-          <h3>Kompletan dizajn enterijera + usluga nadzora</h3>
-          <ul>
-            <li> Izlazak na teren</li>
-            <li> Moodboard</li>
-            <li> 3d vizualizacija</li>
-            <li> Dve opcije sa rasporedom nameštaja</li>
-            <li> Celokupan projekat enterijera (Osnova rušenja, osnova zidanja, osnova podova, osnova plafona, osnova
-              rasvete i
-              prekidača, osnova utičnica, osnova vodovoda i sanitarnih uređaja, izgledi zidova, specifikacija završnih
-              materijala (tapete i pločice), specifikacija sanitarne opreme, specifikacija rasvete, specifikacija
-              tapaciranog
-              nameštaja)</li>
-            <li> Projekat nameštaja po meri (stolarski crteži)</li>
-            <li> Nadzor, nabavka materijala, predmer i predračun radova</li>
-            <li> Nabavka neophodne opreme i materijala</li>
-            <li> Komunikacija sa izvođačima</li>
+        <li *ngFor="let item of items2;let i=index">
+          <div (click)="toggle2(i)">
+            <h3 class="faq-question">{{item.question}}</h3>
+          </div>
+          <ul [@expandCollapse]="activeIndex2 === i ? 'expanded' : 'collapsed'" class="faq-answer">
+            <li *ngFor="let ans of item.answer">{{ans}}</li>
           </ul>
         </li>
       </ol>
-
     </div>
   </div>
   <div class="bottom_container">

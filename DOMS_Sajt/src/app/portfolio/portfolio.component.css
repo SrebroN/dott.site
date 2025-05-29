@@ -34,8 +34,26 @@
   width:100%;
   display:block;
   border-spacing: 15px;
-  box-sizing: border-box;
+
 }
 .table_ img{
 width:100%;
+}
+
+.image-grid {
+    box-sizing: border-box;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 1rem;
+}
+
+.image-cell img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }

@@ -10,3 +10,56 @@ body {
   background-position: top;
   background-color: #e7e0d0;
 }
+
+#app-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#app-loader.fade-out {
+  opacity: 0;
+  transition: opacity 1s ease;
+  pointer-events: none;
+}
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dots span {
+  width: 12px;
+  height: 12px;
+  background: #333;
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-10px);
+    opacity: 0.5;
+  }
+}
+app-root {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+body.loaded app-root {
+  opacity: 1;
+}

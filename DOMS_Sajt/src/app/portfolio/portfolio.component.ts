@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })
@@ -17,4 +18,14 @@ export class PortfolioComponent implements OnInit{
       window.scrollTo(0,0);
     })
   }
+  images:string[]=[
+    "../../assets/slike/doggo_table_1.avif",
+    "../../assets/slike/doggo_table_2.avif",
+    "../../assets/slike/doggo_table_3.avif",
+    "../../assets/slike/doggo_table_4.avif",
+    "../../assets/slike/doggo_table_5.avif",
+    "../../assets/slike/doggo_table_6.avif",
+    "../../assets/slike/doggo_table_7.avif",
+    "../../assets/slike/doggo_table_8.avif"
+  ]
 }

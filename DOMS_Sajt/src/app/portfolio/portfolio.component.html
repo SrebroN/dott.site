@@ -14,21 +14,10 @@
   <div class="h1">
     <h1>Galerija projekata</h1>
   </div>
-  <div class="table_">
-    <tr>
-      <td><img src="../../assets/slike/doggo_table_1.avif"></td>
-      <td><img src="../../assets/slike/doggo_table_2.avif"></td>
-      <td><img src="../../assets/slike/doggo_table_3.avif"></td>
-    </tr>
-    <tr>
-      <td><img src="../../assets/slike/doggo_table_4.avif"></td>
-      <td><img src="../../assets/slike/doggo_table_5.avif"></td>
-      <td><img src="../../assets/slike/doggo_table_6.avif"></td>
-    </tr>
-    <tr>
-      <td><img src="../../assets/slike/doggo_table_7.avif"></td>
-      <td><img src="../../assets/slike/doggo_table_8.avif"></td>
-    </tr>
+  <div class="image-grid">
+    <div class="image-cell" *ngFor="let img of images">
+      <img [src]="img" alt="image" />
+    </div>
   </div>
 
 </body>
