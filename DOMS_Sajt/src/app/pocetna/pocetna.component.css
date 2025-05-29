@@ -1,4 +1,3 @@
-
 .h4 {
   font-size: large;
 }
@@ -10,6 +9,7 @@
 
 .container img#top_image {
   width: 100%;
+
 }
 
 .controls {
@@ -24,7 +24,7 @@
 }
 
 button {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #150b02;
   color: white;
   border: none;
   font-size: 2rem;
@@ -80,14 +80,8 @@ button {
   text-align: justify;
 }
 
-.top_text a:link{
- color:black;
-}
-
-.top_text a:visited{
- color:black;
-}
-
+.top_text a:link,
+.top_text a:visited,
 .top_text a:active{
  color:black;
 }
@@ -210,10 +204,6 @@ button {
   border: none;
   cursor: pointer;
 }
-
-
-
-
 
 .top_left_text a {
   font-size: 1.3pc;

@@ -2,13 +2,16 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 @Component({
   selector: 'app-pocetna',
   standalone: true,
   imports: [RouterLink,MatIconModule],
   templateUrl: './pocetna.component.html',
-  styleUrl: './pocetna.component.css'
+  styleUrl: './pocetna.component.css',
+
 })
+
 export class PocetnaComponent implements OnInit, OnDestroy {
   constructor (private router:Router){}
   images: string[] = [
