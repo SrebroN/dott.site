@@ -1,6 +1,6 @@
 <body>
   <div class="container">
-    <img src="../../assets/slike/top_image_proba.jpg" alt="pctr" id="top_image">
+    <img [src]="images[currentIndex]" alt="Slide image" id="top_image">
     <div class="top_left_text">
       <p>definition of <br>timeless topology</p>
       <a href routerLink="/portfolio">see our projects</a>
@@ -8,6 +8,10 @@
     <div class="bot_left_text">
       <p>established <strong>2025</strong></p>
     </div>
+      <div class="controls">
+    <button (click)="prevSlide()">❮</button>
+    <button (click)="nextSlide()">❯</button>
+  </div>
   </div>
 
   <div class="top_text">
