@@ -41,13 +41,14 @@ width:100%;
 }
 
 .image-grid {
-    box-sizing: border-box;
+  box-sizing: border-box;
   padding-left: 10%;
   padding-right: 10%;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns */
   gap: 1rem;
+  margin-bottom: 3pc;
 }
 
 .image-cell img {

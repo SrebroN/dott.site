@@ -157,6 +157,7 @@ button {
   height: 100vh;
   background-image: url('../../assets/slike/dog_wallpaper.jpg');
   background-size: 100%;
+  margin-bottom: 5pc;
 }
 
 .bottom_image_section {
@@ -209,50 +210,3 @@ button {
   font-size: 1.3pc;
 }
 
-.bottom_images {
-  border-top: 100px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding-left: 10%;
-  padding-right: 10%;
-  bottom: 0;
-  width: 100%;
-}
-
-.bottom_images_each {
-  display: grid;
-  width: 100px;
-}
-
-.bottom_grid_text {
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  padding-left: 10%;
-  padding-right: 10%;
-  bottom: 0;
-  width: 100%;
-}
-
-.bottom_grid_text_left {
-  display: grid;
-  text-align: left;
-  width: 25%;
-}
-
-.bottom_grid_text_middle {
-  display: grid;
-  text-align: center;
-  width: 25%;
-}
-
-.bottom_grid_text_right {
-  display: grid;
-  text-align: right;
-  width: 25%;
-}
