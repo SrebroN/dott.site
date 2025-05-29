@@ -11,8 +11,10 @@
   </div>
 </nav>
 
+<button mat-icon-button class="go-to-top" *ngIf="showTopButton" (click)="scrollToTop()">
+  <mat-icon>arrow_upward</mat-icon>
+</button>
 <router-outlet></router-outlet>
-
 <footer class="footer" id="toKontakt">
   <div class="footer-left">
     <p>Sva prava zadrzana</p>
