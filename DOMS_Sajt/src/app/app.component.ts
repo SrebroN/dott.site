@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
-import { RouterOutlet, RouterLink } from '@angular/router';
+import { ViewportScroller } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { RouterOutlet, RouterLink, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -8,6 +10,15 @@ import { RouterOutlet, RouterLink } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'app';
+  constructor(private scroller: ViewportScroller, private router: Router) { }
+
+  ngOnInit() {
+    this.router.navigate(["/"]);
+  }
+  scrollToKontakt() {
+    this.scroller.scrollToAnchor("toKontakt");
+
+  }
 }

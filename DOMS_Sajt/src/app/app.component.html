@@ -6,14 +6,14 @@
     <a class="hover-underline" routerLink="">Pocetna</a>
     <a class="hover-underline" routerLink="/usluge">Usluge</a>
     <a class="hover-underline" routerLink="/portfolio">Portfolio</a>
-    <a class="hover-underline" routerLink="/kontakt">Kontakt</a>
+    <a class="hover-underline" (click)="scrollToKontakt()">Kontakt</a>
 
   </div>
 </nav>
 
 <router-outlet></router-outlet>
 
-<footer class="footer">
+<footer class="footer" id="toKontakt">
   <div class="footer-left">
     <p>Sva prava zadrzana</p>
   </div>

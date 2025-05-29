@@ -1,0 +1,65 @@
+.container {
+  position: relative;
+  display: flex;
+}
+
+.container img#top_image {
+  width: 100%;
+}
+
+.container_middle_text {
+  color: #fff;
+  font-size: medium;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.bot_left_text {
+  position: absolute;
+  color: #fff;
+  font-size: smaller;
+  left: 10%;
+  bottom: 0%;
+}
+
+
+.bottom_container {
+  margin-top:40px;
+  border-top:100px;
+  display: flex;
+  width: 100%;
+}
+
+.bottom_image_section {
+  flex: 1;
+  overflow: hidden;
+  padding-bottom: 5%;
+  padding-left: 10%;
+}
+
+.bottom_image_section img {
+  width: auto;
+  height: 100%;
+  object-position: center;
+  display: block;
+}
+
+.bottom_text_section {
+/* width: 30%;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* or 'flex-start' if you want top alignment */
+  padding: 5%10%;
+  text-align: justify;
+}
+
+.bottom_text_section li{
+  margin-top: 1pc;
+}
+
+.bottom_text_section ol#header3{
+}

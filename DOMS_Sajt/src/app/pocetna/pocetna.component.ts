@@ -12,8 +12,8 @@ export class PocetnaComponent implements OnInit, OnDestroy {
   constructor (private router:Router){}
   images: string[] = [
     "assets/slike/slideshow_dog_1.webp",
-    "assets/slike/slideshow_dog_2.avif",
-    "assets/slike/slideshow_dog_3.avif",
+    "assets/slike/slideshow_dog_2.jpg",
+    "assets/slike/slideshow_dog_3.jpg",
     "assets/slike/slideshow_dog_4.jpg",
   ]
   currentIndex = 0;
