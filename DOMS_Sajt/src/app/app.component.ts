@@ -2,7 +2,7 @@ import { ViewportScroller } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-root',
   standalone: true,

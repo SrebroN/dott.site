@@ -80,6 +80,17 @@ button {
   text-align: justify;
 }
 
+.top_text a:link{
+ color:black;
+}
+
+.top_text a:visited{
+ color:black;
+}
+
+.top_text a:active{
+ color:black;
+}
 
 .images_ {
   box-sizing: border-box;

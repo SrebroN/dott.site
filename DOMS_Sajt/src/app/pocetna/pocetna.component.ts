@@ -1,10 +1,11 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-
+import { RouterLink } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
 @Component({
   selector: 'app-pocetna',
   standalone: true,
-  imports: [],
+  imports: [RouterLink,MatIconModule],
   templateUrl: './pocetna.component.html',
   styleUrl: './pocetna.component.css'
 })
