@@ -1,8 +1,12 @@
 <body>
   <div class="container">
-    <img [src]="images[currentIndex]" alt="Slide image" id="top_image">
+    <div class="image_wrapper">
+      <ng-container *ngFor="let img of images; let i = index">
+        <img *ngIf="i === currentIndex" [@fade] [src]="img" alt="Slide image" id="top_image" />
+      </ng-container>
+    </div>
     <div class="top_left_text">
-      <p>definition of <br>timeless topology</p>
+      <p>definition of<br>timeless topology</p>
       <div><a href routerLink="/portfolio">see our projects </a>
       </div>
     </div>

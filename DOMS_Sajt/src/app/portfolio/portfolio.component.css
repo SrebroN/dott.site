@@ -1,5 +1,6 @@
 .container {
   position: relative;
+  aspect-ratio: 16/9;
   display: flex;
 }
 
@@ -17,27 +18,35 @@
   -ms-transform: translate(-50%, -50%);
 }
 
+.image_wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
 .bot_left_text {
   position: absolute;
   color: #fff;
   font-size: smaller;
   left: 10%;
-  bottom: 0%;
+  bottom: 3%;
 }
 
 .h1 {
-  padding-left:10%;
+  padding-left: 10%;
 }
-.table_{
-  padding-left:10%;
+
+.table_ {
+  padding-left: 10%;
   padding-right: 10%;
-  width:100%;
-  display:block;
+  width: 100%;
+  display: block;
   border-spacing: 15px;
 
 }
-.table_ img{
-width:100%;
+
+.table_ img {
+  width: 100%;
 }
 
 .image-grid {
@@ -46,7 +55,8 @@ width:100%;
   padding-right: 10%;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columns */
   gap: 1rem;
   margin-bottom: 3pc;
 }

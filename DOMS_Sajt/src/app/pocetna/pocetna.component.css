@@ -7,9 +7,20 @@
   display: flex;
 }
 
+.image_wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 16/9;
+}
+
 .container img#top_image {
   width: 100%;
-
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .controls {
@@ -82,8 +93,8 @@ button {
 
 .top_text a:link,
 .top_text a:visited,
-.top_text a:active{
- color:black;
+.top_text a:active {
+  color: black;
 }
 
 .images_ {
@@ -120,7 +131,7 @@ button {
 }
 
 .images_each:hover .images_each {
-  opacity:0.3;
+  opacity: 0.3;
 }
 
 .images_each:hover .images_text {
@@ -209,4 +220,3 @@ button {
 .top_left_text a {
   font-size: 1.3pc;
 }
-
