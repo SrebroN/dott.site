@@ -94,7 +94,7 @@ body.loaded app-root {
 
 @font-face {
   font-family: "Roden";
-  src: url(assets/fonts/Roden/Roden\ Regular.otf);
+  src: url(assets/fonts/Roden/Roden-Regular.otf);
   font-weight: normal;
   font-style: normal;
 
@@ -102,7 +102,7 @@ body.loaded app-root {
 
 @font-face {
   font-family: "Saldo";
-  src: url(assets/fonts/Saldo/Saldo\ Regular.otf);
+  src: url(assets/fonts/Saldo/Saldo-Regular.otf);
   font-weight: normal;
   font-style: normal;
 }
