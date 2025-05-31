@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "dott.architects": {
+    "app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,10 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/dott.site",
+            "outputPath": "dist/",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "baseHref": "/dott.site/",
             "polyfills": [
               "zone.js"
             ],
