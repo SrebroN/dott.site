@@ -3,11 +3,12 @@ import { NavigationEnd, Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { CommonModule } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
+import { AppComponent } from '../app.component';
 @Component({
   selector: 'app-pocetna',
   standalone: true,
-  imports: [RouterLink, MatIconModule,CommonModule],
+  imports: [RouterLink, MatIconModule, CommonModule],
   templateUrl: './pocetna.component.html',
   styleUrl: './pocetna.component.css',
   animations: [
@@ -24,12 +25,13 @@ import { CommonModule } from '@angular/common';
 })
 
 export class PocetnaComponent implements OnInit, OnDestroy {
-  constructor(private router: Router) { }
+  viewportScroller: any;
+  constructor(private router: Router, private scroller: ViewportScroller) { }
   images: string[] = [
-    "assets/slike/slideshow_dog_1.webp",
-    "assets/slike/slideshow_dog_2.jpg",
-    "assets/slike/slideshow_dog_3.jpg",
-    "assets/slike/slideshow_dog_4.jpg",
+    "assets/slike/slideshow_1.jpg",
+    "assets/slike/slideshow_2.jpg",
+    "assets/slike/dnevna.jpg",
+    "assets/slike/Aks2.jpg"
   ]
   currentIndex = 0;
   intervalId: any;
@@ -58,5 +60,18 @@ export class PocetnaComponent implements OnInit, OnDestroy {
   }
   prevSlide() {
     this.currentIndex = (this.currentIndex - 1 + this.images.length) % this.images.length;
+  }
+  scrollToFooter() {
+    this.scroller.scrollToAnchor('toKontakt');
+  }
+  scrollToUsluge() {
+     this.router.navigateByUrl('/usluge').then(() => {
+      setTimeout(() => this.viewportScroller.scrollToAnchor(''), 1);
+    });
+  }
+  scrollToEnterijer() {
+    this.router.navigateByUrl('/usluge').then(() => {
+      setTimeout(() => this.viewportScroller.scrollToAnchor('toEnterijer'), 1);
+    });
   }
 }

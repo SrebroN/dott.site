@@ -6,7 +6,7 @@
       </ng-container>
     </div>
     <div class="top_left_text">
-      <p>definition of<br>timeless topology</p>
+      <p><i>definition of<br>timeless topology</i></p>
       <div><a href routerLink="/portfolio">see our projects </a>
       </div>
     </div>
@@ -27,7 +27,7 @@
         nejasnoj granici između fizički opipljivog i unutrašnjeg sveta. Čovek svojom suštinom oblikuje i stvara
         neponovljivi entitet. Zato je izbor prostora neizostavni deo ciklusa koji definiše čovekov život.
       </p>
-      <p>Vise o nama</p>
+      <a (click)="scrollToFooter()"><br>Vise o nama</a>
     </div>
     <div class="top_text_each">
       <h4 class="h4">Simfonija oblika</h4>
@@ -36,7 +36,7 @@
         praznine. Harmonija se projektuje skladu sa tlom, vetrom, svetlom, senkom, pokretom. Ona određuje odnose -
         između čoveka i prostora, između materije i etera, između onoga što jeste i onoga što bi moglo biti.
       </p>
-      <a routerLink="/usluge">Vise o nasim uslugama</a>
+      <a routerLink="/usluge"><br>Vise o nasim uslugama</a>
     </div>
     <div class="top_text_each">
       <h4 class="h4">Metodologija rada</h4>
@@ -60,19 +60,19 @@
   </div>
   <br>
   <div class="images_">
-    <div class="images_each"><img src="../../assets/slike/download_1.jpeg">
+    <div class="images_each"><img src="../../assets/slike/Aks2.jpg">
       <div class="images_text">
-        <p>ENTERIJER PO MERI</p>
+        <p (click)="scrollToEnterijer()">ENTERIJER PO MERI</p>
       </div>
     </div>
-    <div class="images_each"><img src="../../assets/slike/download_2.jpeg">
+    <div class="images_each"><img src="../../assets/slike/namestaj_po_meri_1.png">
       <div class="images_text">
-        <p>NAMESTAJ PO MERI</p>
+        <p (click)="scrollToEnterijer()">NAMESTAJ PO MERI</p>
       </div>
     </div>
-    <div class="images_each"><img src="../../assets/slike/download_3.jpeg">
+    <div class="images_each"><img src="../../assets/slike/usluge.jpg">
       <div class="images_text">
-        <p>NASI PAKETI</p>
+        <p (click)="scrollToUsluge()">NASE USLUGE</p>
       </div>
     </div>
   </div>
@@ -88,7 +88,7 @@
   <br><br><br>
   <div class="bottom_container">
     <div class="bottom_image_section">
-      <img src="../../assets/slike/dog.webp" alt="Interior">
+      <img src="../../assets/slike/slideshow_2.jpg" alt="Interior">
     </div>
     <div class="bottom_text_section">
       <h1>dott. x cedrus</h1>
@@ -101,7 +101,6 @@
         Linije su čiste, forma odabrana pažljivim nizom iteracija, materijal istaknut posebnim tehnikama završne obrade.
         Kroz ovaj projekat, težimo stvaranju autentičnih predmeta koji nisu samo estetski upečatljivi, već imaju
         sposobnost da oblikuju atmosferu, utiču na raspoloženje i postanu sastavni deo svakodnevnog života.</p>
-      <button>link here</button>
     </div>
   </div>
 

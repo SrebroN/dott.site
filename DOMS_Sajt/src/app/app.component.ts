@@ -20,7 +20,10 @@ export class AppComponent implements OnInit {
   }
   scrollToKontakt() {
     this.scroller.scrollToAnchor("toKontakt");
-
+  }
+  scrollLogo(){
+    this.router.navigate(["/"]);
+    this.scrollToTop();
   }
   @HostListener('window:scroll')
   onWindowScroll() {

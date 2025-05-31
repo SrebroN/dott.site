@@ -1,6 +1,7 @@
-html{
+html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   left: 0;
@@ -23,11 +24,13 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 #app-loader.fade-out {
   opacity: 0;
   transition: opacity 1s ease;
   pointer-events: none;
 }
+
 .dots {
   display: flex;
   gap: 8px;
@@ -55,6 +58,7 @@ body {
     opacity: 0.5;
   }
 }
+
 app-root {
   opacity: 0;
   transition: opacity 1s ease;
@@ -63,6 +67,7 @@ app-root {
 body.loaded app-root {
   opacity: 1;
 }
+
 .go-to-top {
   position: fixed;
   bottom: 20px;
@@ -80,5 +85,30 @@ body.loaded app-root {
   opacity: 1;
 }
 
+@font-face {
+  font-family: "Mansfield";
+  src: url(assets/fonts/Mansfield/Mansfield.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+  font-family: "Roden";
+  src: url(assets/fonts/Roden/Roden\ Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: "Saldo";
+  src: url(assets/fonts/Saldo/Saldo\ Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Roden", "Saldo", Arial, Helvetica, sans-serif;
+}

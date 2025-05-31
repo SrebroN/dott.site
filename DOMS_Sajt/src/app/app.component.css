@@ -19,11 +19,13 @@
 
 .nav-left img#logo {
   height: 60px;
+  cursor:pointer;
 }
 
 .nav-right a {
   font-size:1pc;
   margin-left: 60px;
+  cursor:pointer;
 }
 
 router-outlet {

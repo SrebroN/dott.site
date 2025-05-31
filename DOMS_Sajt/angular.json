@@ -16,6 +16,7 @@
             "outputPath": "dist/app",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/dott.site/",
             "polyfills": [
               "zone.js"
             ],
@@ -88,6 +89,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

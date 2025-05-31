@@ -10,7 +10,7 @@
 
 .container_middle_text {
   color: #fff;
-  font-size: medium;
+  font-size: 2pc;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -30,6 +30,7 @@
   font-size: smaller;
   left: 10%;
   bottom: 3%;
+    font-family: "Rodeon",sans-serif;
 }
 
 .h1 {
@@ -63,8 +64,9 @@
 
 .image-cell img {
   width: 100%;
-  height: auto;
+  height: 50vh;
   border-radius: 8px;
   object-fit: cover;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
 }

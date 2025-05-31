@@ -19,13 +19,26 @@ export class PortfolioComponent implements OnInit{
     })
   }
   images:string[]=[
-    "../../assets/slike/doggo_table_1.avif",
-    "../../assets/slike/doggo_table_2.avif",
-    "../../assets/slike/doggo_table_3.avif",
-    "../../assets/slike/doggo_table_4.avif",
-    "../../assets/slike/doggo_table_5.avif",
-    "../../assets/slike/doggo_table_6.avif",
-    "../../assets/slike/doggo_table_7.avif",
-    "../../assets/slike/doggo_table_8.avif"
+    "../../assets/slike/11_copy.jpg",
+    "../../assets/slike/enterijer_1.jpg",
+    "../../assets/slike/enterijer_3.jpg",
+    "../../assets/slike/KUHINJA_1.png",
+    "../../assets/slike/KUHINJA_2.png",
+    "../../assets/slike/Aks2.jpg",
+    "../../assets/slike/namestaj_po_meri_1.png",
+    "../../assets/slike/render_copy.jpg",
+    "../../assets/slike/enterior_3.jpg",
+    "../../assets/slike/enterior_4.jpg",
+    "../../assets/slike/enterior_1.jpg",
+    "../../assets/slike/enterior_2.jpg",
+    "../../assets/slike/dnevna.jpg",
+    "../../assets/slike/slideshow_1.jpg",
+    "../../assets/slike/DNEVNA_1.png",
+    "../../assets/slike/DNEVNA_2.png",
+    "../../assets/slike/DNEVNA_3.png",
+    "../../assets/slike/T2.jpg",
+    "../../assets/slike/T3.png",
+    "../../assets/slike/T5.jpg",
+    "../../assets/slike/usluge.jpg"
   ]
 }
