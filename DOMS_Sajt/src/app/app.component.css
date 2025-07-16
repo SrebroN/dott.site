@@ -1,4 +1,3 @@
-
 .navigation {
   position: fixed;
   z-index: 1030;
@@ -11,7 +10,7 @@
   background-color: #150b02;
   box-sizing: border-box;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(5px);
@@ -19,13 +18,13 @@
 
 .nav-left img#logo {
   height: 60px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .nav-right a {
-  font-size:1pc;
+  font-size: 1pc;
   margin-left: 60px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 router-outlet {
@@ -91,7 +90,7 @@ a:active {
   align-items: center;
   margin: 0;
   padding-left: 10%;
-  padding-right:10%;
+  padding-right: 10%;
   bottom: 0;
   width: 100%;
 }
@@ -112,4 +111,85 @@ a:active {
   display: grid;
   margin-top: 5px;
   text-align: right;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-right {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    width: 250px;
+    height: fit-content;
+    background-color: #150b02;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    transition: left 0.3s ease;
+    z-index: 2000;
+  }
+
+  .nav-right.open {
+    left: 0;
+
+  }
+
+  .nav-right a {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+
+  .nav-left img#logo {
+    display: none;
+  }
+
+  .menu-overlay {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 60px);
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+
+  .burger {
+    display: block;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2001;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 2rem 5%;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    margin: 1rem 0;
+  }
+
+  .footer-center img {
+    height: 60px;
+  }
+
+  .footer-right p {
+    text-align: center;
+  }
+
+  .footer-right p a {
+    display: block;
+    margin-top: 0.5rem;
+  }
 }

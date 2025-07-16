@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
   scrollToKontakt() {
     this.scroller.scrollToAnchor("toKontakt");
   }
-  scrollLogo(){
+  scrollLogo() {
     this.router.navigate(["/"]);
     this.scrollToTop();
   }
@@ -32,6 +32,15 @@ export class AppComponent implements OnInit {
   scrollToTop() {
     window.scrollTo({ top: 0 });
   }
+  menuOpen = false;
 
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+    if (this.menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  }
 }
 
