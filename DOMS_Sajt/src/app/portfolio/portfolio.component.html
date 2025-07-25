@@ -15,9 +15,11 @@
     <h1>Galerija projekata</h1>
   </div>
   <div class="image-grid">
-    <div class="image-cell" *ngFor="let img of images">
-      <img [src]="img" alt="image" />
-    </div>
+    @for (img of images; track img) {
+      <div class="image-cell">
+        <img [src]="img" alt="image" />
+      </div>
+    }
   </div>
 
 </body>

@@ -3,12 +3,12 @@ import { NavigationEnd, Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { CommonModule, ViewportScroller } from '@angular/common';
+import { ViewportScroller } from '@angular/common';
 import { AppComponent } from '../app.component';
 @Component({
   selector: 'app-pocetna',
   standalone: true,
-  imports: [RouterLink, MatIconModule, CommonModule],
+  imports: [RouterLink, MatIconModule],
   templateUrl: './pocetna.component.html',
   styleUrl: './pocetna.component.css',
   animations: [

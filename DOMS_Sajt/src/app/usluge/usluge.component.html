@@ -16,16 +16,18 @@
     <div class="bottom_text_section">
       <h1>Projektovanje objekata</h1>
       <p>Projektovanje objekta obuhvata nekoliko faza, pri čemu svaka podrazumeva izradu određene vrste projektne
-        dokumentacije. U skladu s tim, nudimo izradu sledećih dokumentacionih celina:</p>
+      dokumentacije. U skladu s tim, nudimo izradu sledećih dokumentacionih celina:</p>
       <ol>
-        <li *ngFor="let item of items;let i=index">
-          <div (click)="toggle(i)">
-            <h3>{{item.question}}</h3>
-          </div>
-          <div [@expandCollapse]="activeIndex === i ? 'expanded' : 'collapsed'" class="faq-answer">
-            {{item.answer}}
-          </div>
-        </li>
+        @for (item of items; track item; let i = $index) {
+          <li>
+            <div (click)="toggle(i)">
+              <h3>{{item.question}}</h3>
+            </div>
+            <div [@expandCollapse]="activeIndex === i ? 'expanded' : 'collapsed'" class="faq-answer">
+              {{item.answer}}
+            </div>
+          </li>
+        }
       </ol>
     </div>
   </div>
@@ -34,14 +36,18 @@
     <div class="bottom_text_section">
       <h1 id="toEnterijer">Projekat enterijera</h1>
       <ol>
-        <li *ngFor="let item of items2;let i=index">
-          <div (click)="toggle2(i)">
-            <h3 class="faq-question">{{item.question}}</h3>
-          </div>
-          <ul [@expandCollapse]="activeIndex2 === i ? 'expanded' : 'collapsed'" class="faq-answer">
-            <li *ngFor="let ans of item.answer">{{ans}}</li>
-          </ul>
-        </li>
+        @for (item of items2; track item; let i = $index) {
+          <li>
+            <div (click)="toggle2(i)">
+              <h3 class="faq-question">{{item.question}}</h3>
+            </div>
+            <ul [@expandCollapse]="activeIndex2 === i ? 'expanded' : 'collapsed'" class="faq-answer">
+              @for (ans of item.answer; track ans) {
+                <li>{{ans}}</li>
+              }
+            </ul>
+          </li>
+        }
       </ol>
     </div>
   </div>
@@ -66,7 +72,7 @@
     <div class="bottom_text_section">
       <h1>Energetska efikasnost </h1>
       <p>Energetska efikasnost podrazumeva niz mera koje preduzimamo u cilju smanjenja potrošnje energije. Elaborat
-        energerske efikasnosti je neophodna stavka u procesu dobijanja građevinske dozvole</p>
+      energerske efikasnosti je neophodna stavka u procesu dobijanja građevinske dozvole</p>
     </div>
   </div>
 </body>

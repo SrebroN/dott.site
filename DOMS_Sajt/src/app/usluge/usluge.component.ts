@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { animate, state, style, transition, trigger } from '@angular/animations';
 @Component({
   selector: 'app-usluge',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './usluge.component.html',
   styleUrl: './usluge.component.css',
   animations: [

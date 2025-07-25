@@ -1,10 +1,10 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-portfolio',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })

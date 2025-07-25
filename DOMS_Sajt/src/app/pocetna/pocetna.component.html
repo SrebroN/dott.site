@@ -1,80 +1,82 @@
 <body>
   <div class="container">
     <div class="image_wrapper">
-      <ng-container *ngFor="let img of images; let i = index">
-        <img *ngIf="i === currentIndex" [@fade] [src]="img" alt="Slide image" id="top_image" />
-      </ng-container>
+      @for (img of images; track img; let i = $index) {
+        @if (i === currentIndex) {
+          <img [@fade] [src]="img" alt="Slide image" id="top_image" />
+        }
+      }
     </div>
     <div class="top_left_text">
       <p><i>definition of<br>timeless topology</i></p>
       <div><a href routerLink="/portfolio">see our projects </a>
-      </div>
-    </div>
-    <div class="bot_left_text">
-      <p>established <strong>2025</strong></p>
-    </div>
-    <div class="controls">
-      <button (click)="prevSlide()">❮</button>
-      <button (click)="nextSlide()">❯</button>
     </div>
   </div>
+  <div class="bot_left_text">
+    <p>established <strong>2025</strong></p>
+  </div>
+  <div class="controls">
+    <button (click)="prevSlide()">❮</button>
+    <button (click)="nextSlide()">❯</button>
+  </div>
+</div>
 
-  <div class="top_text">
-    <div class="top_text_each">
-      <h4 class="h4">Esencija projektovanja</h4>
-      <p>Prostor je atmosfera, esencija duše, toplina koja odzvanja u tišini, a ne samo fizička struktura u kojoj se
-        boravi. Veština projektovanja leži u dubokom razumevanju konteksta, emocije i percepcije čoveka, ali i u
-        nejasnoj granici između fizički opipljivog i unutrašnjeg sveta. Čovek svojom suštinom oblikuje i stvara
-        neponovljivi entitet. Zato je izbor prostora neizostavni deo ciklusa koji definiše čovekov život.
-      </p>
-      <a (click)="scrollToFooter()"><br>Vise o nama</a>
-    </div>
-    <div class="top_text_each">
-      <h4 class="h4">Simfonija oblika</h4>
-      <p>Harmonija je definisana proporcijama, pravilno raspoređenim osama ili, jednostavno, tišinom simetrije. Kroz
-        ritam prirode pretočen u formu, svetlost i zvuk kreira balans između duha i materije, kao i prisustva i
-        praznine. Harmonija se projektuje skladu sa tlom, vetrom, svetlom, senkom, pokretom. Ona određuje odnose -
-        između čoveka i prostora, između materije i etera, između onoga što jeste i onoga što bi moglo biti.
-      </p>
-      <a routerLink="/usluge"><br>Vise o nasim uslugama</a>
-    </div>
-    <div class="top_text_each">
-      <h4 class="h4">Metodologija rada</h4>
-      <p><i>„Architecture is not about designing something new every time. It's about finding the eternal in the
-          specific.“</i>
-        - Peter Zumthor<br>
-        Adaptibilnost prostora je izrazito važan aspekt metodologije projektovanja. Potraga za harmoničnim odnosima
-        između čoveka, prostora i prirode formira dizajn koji odiše balansom prisustva i praznine, duha i materije.
-        Svaki projekat je promišljen odgovor na kontekst, prožet osećajem pripadanja, ritma i suštine.
-      </p>
-      <a routerLink="/portfolio">Vise o nasim proizvodima</a>
-    </div>
+<div class="top_text">
+  <div class="top_text_each">
+    <h4 class="h4">Esencija projektovanja</h4>
+    <p>Prostor je atmosfera, esencija duše, toplina koja odzvanja u tišini, a ne samo fizička struktura u kojoj se
+      boravi. Veština projektovanja leži u dubokom razumevanju konteksta, emocije i percepcije čoveka, ali i u
+      nejasnoj granici između fizički opipljivog i unutrašnjeg sveta. Čovek svojom suštinom oblikuje i stvara
+      neponovljivi entitet. Zato je izbor prostora neizostavni deo ciklusa koji definiše čovekov život.
+    </p>
+    <a (click)="scrollToFooter()"><br>Vise o nama</a>
   </div>
-  <br>
+  <div class="top_text_each">
+    <h4 class="h4">Simfonija oblika</h4>
+    <p>Harmonija je definisana proporcijama, pravilno raspoređenim osama ili, jednostavno, tišinom simetrije. Kroz
+      ritam prirode pretočen u formu, svetlost i zvuk kreira balans između duha i materije, kao i prisustva i
+      praznine. Harmonija se projektuje skladu sa tlom, vetrom, svetlom, senkom, pokretom. Ona određuje odnose -
+      između čoveka i prostora, između materije i etera, između onoga što jeste i onoga što bi moglo biti.
+    </p>
+    <a routerLink="/usluge"><br>Vise o nasim uslugama</a>
+  </div>
+  <div class="top_text_each">
+    <h4 class="h4">Metodologija rada</h4>
+    <p><i>„Architecture is not about designing something new every time. It's about finding the eternal in the
+    specific.“</i>
+    - Peter Zumthor<br>
+    Adaptibilnost prostora je izrazito važan aspekt metodologije projektovanja. Potraga za harmoničnim odnosima
+    između čoveka, prostora i prirode formira dizajn koji odiše balansom prisustva i praznine, duha i materije.
+    Svaki projekat je promišljen odgovor na kontekst, prožet osećajem pripadanja, ritma i suštine.
+  </p>
+  <a routerLink="/portfolio">Vise o nasim proizvodima</a>
+</div>
+</div>
+<br>
   <div class="middle_text">
     <div>
       <p><i>“Topology is not form, but the potential of form — the way in which architecture can be generated by the
-          relationships between spaces, rather than the objects themselves.”</i></p>
+      relationships between spaces, rather than the objects themselves.”</i></p>
       <p>Peter Einsenman</p>
     </div>
   </div>
   <br>
-  <div class="images_">
-    <div class="images_each"><img src="../../assets/slike/Aks2.jpg">
-      <div class="images_text">
-        <p (click)="scrollToEnterijer()">ENTERIJER PO MERI</p>
+    <div class="images_">
+      <div class="images_each"><img src="../../assets/slike/Aks2.jpg">
+        <div class="images_text">
+          <p (click)="scrollToEnterijer()">ENTERIJER PO MERI</p>
+        </div>
+      </div>
+      <div class="images_each"><img src="../../assets/slike/namestaj_po_meri_1.png">
+        <div class="images_text">
+          <p (click)="scrollToEnterijer()">NAMESTAJ PO MERI</p>
+        </div>
+      </div>
+      <div class="images_each"><img src="../../assets/slike/usluge.jpg">
+        <div class="images_text">
+          <p (click)="scrollToUsluge()">NASE USLUGE</p>
+        </div>
       </div>
     </div>
-    <div class="images_each"><img src="../../assets/slike/namestaj_po_meri_1.png">
-      <div class="images_text">
-        <p (click)="scrollToEnterijer()">NAMESTAJ PO MERI</p>
-      </div>
-    </div>
-    <div class="images_each"><img src="../../assets/slike/usluge.jpg">
-      <div class="images_text">
-        <p (click)="scrollToUsluge()">NASE USLUGE</p>
-      </div>
-    </div>
-  </div>
-  <br><br><br><br><br>
-</body>
+    <br><br><br><br><br>
+  </body>
