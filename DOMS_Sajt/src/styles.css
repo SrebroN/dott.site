@@ -79,6 +79,7 @@ body.loaded app-root {
   opacity: 0.7;
   transition: opacity 0.2s ease-in-out;
   cursor: pointer;
+  z-index: 2002;
 }
 
 .go-to-top:hover {

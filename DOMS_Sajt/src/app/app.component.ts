@@ -42,5 +42,14 @@ export class AppComponent implements OnInit {
       document.body.style.overflow = '';
     }
   }
+
+  toggleMenuRouter() {
+    if (this.menuOpen) {
+      this.menuOpen = false;
+      document.body.style.overflow = '';
+    }
+    this.scrollToTop();
+  }
+
 }
 

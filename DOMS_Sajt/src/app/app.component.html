@@ -5,10 +5,10 @@
     <img src="../assets/slike/LOGO.jpg" alt="dott." (click)="scrollLogo()" id="logo">&nbsp;&nbsp;
   </div>
   <div class="nav-right" [class.open]="menuOpen">
-    <a class="hover-underline" routerLink=""(click)="toggleMenu()">Pocetna</a>
-    <a class="hover-underline" routerLink="/usluge"(click)="toggleMenu()">Usluge</a>
-    <a class="hover-underline" routerLink="/portfolio"(click)="toggleMenu()">Portfolio</a>
-    <a class="hover-underline" (click)="scrollToKontakt()"(click)="toggleMenu()">Kontakt</a>
+    <a class="hover-underline" routerLink=""(click)="toggleMenuRouter()">Pocetna</a>
+    <a class="hover-underline" routerLink="/usluge"(click)="toggleMenuRouter()">Usluge</a>
+    <a class="hover-underline" routerLink="/portfolio"(click)="toggleMenuRouter()">Portfolio</a>
+    <a class="hover-underline" (click)="toggleMenuRouter()"(click)="scrollToKontakt()">Kontakt</a>
 
   </div>
 
