@@ -1,19 +1,31 @@
-import { ViewportScroller } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterOutlet, RouterLink, Router } from '@angular/router';
 
 import { MatIconModule } from '@angular/material/icon';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink, MatIconModule],
+  imports: [RouterOutlet, RouterLink, MatIconModule,CommonModule,TranslateModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent implements OnInit {
   title = 'app';
   showTopButton: boolean = false;
-  constructor(private scroller: ViewportScroller, private router: Router) { }
+  constructor(private scroller: ViewportScroller, private router: Router, private translate:TranslateService) {
+    translate.addLangs(['en', 'sr']);
+    translate.setFallbackLang('sr');
+
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang?.match(/en|sr/) ? browserLang : 'sr');
+  }
+
+  switchLang(lang:string){
+    this.translate.use(lang);
+  //  localStorage.setItem('lang', lang);
+  }
 
   ngOnInit() {
     this.router.navigate(["/"]);

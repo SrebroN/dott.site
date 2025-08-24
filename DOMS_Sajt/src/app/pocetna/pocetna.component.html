@@ -23,33 +23,22 @@
 
 <div class="top_text">
   <div class="top_text_each">
-    <h4 class="h4">Esencija projektovanja</h4>
-    <p>Prostor je atmosfera, esencija duše, toplina koja odzvanja u tišini, a ne samo fizička struktura u kojoj se
-      boravi. Veština projektovanja leži u dubokom razumevanju konteksta, emocije i percepcije čoveka, ali i u
-      nejasnoj granici između fizički opipljivog i unutrašnjeg sveta. Čovek svojom suštinom oblikuje i stvara
-      neponovljivi entitet. Zato je izbor prostora neizostavni deo ciklusa koji definiše čovekov život.
+    <h4 class="h4">{{"UPPERTEXT.HEADER1"|translate}}</h4>
+    <p>{{"UPPERTEXT.PAR1"|translate}}
     </p>
-    <a (click)="scrollToFooter()"><br>Vise o nama</a>
+    <a (click)="scrollToFooter()"><br>{{"UPPERTEXT.LINK1"|translate}}</a>
   </div>
   <div class="top_text_each">
-    <h4 class="h4">Simfonija oblika</h4>
-    <p>Harmonija je definisana proporcijama, pravilno raspoređenim osama ili, jednostavno, tišinom simetrije. Kroz
-      ritam prirode pretočen u formu, svetlost i zvuk kreira balans između duha i materije, kao i prisustva i
-      praznine. Harmonija se projektuje skladu sa tlom, vetrom, svetlom, senkom, pokretom. Ona određuje odnose -
-      između čoveka i prostora, između materije i etera, između onoga što jeste i onoga što bi moglo biti.
+    <h4 class="h4">{{"UPPERTEXT.HEADER2"|translate}}</h4>
+    <p>{{"UPPERTEXT.PAR2"|translate}}
     </p>
-    <a routerLink="/usluge"><br>Vise o nasim uslugama</a>
+    <a routerLink="/usluge"><br>{{"UPPERTEXT.LINK2"|translate}}</a>
   </div>
   <div class="top_text_each">
-    <h4 class="h4">Metodologija rada</h4>
-    <p><i>„Architecture is not about designing something new every time. It's about finding the eternal in the
-    specific.“</i>
-    - Peter Zumthor<br>
-    Adaptibilnost prostora je izrazito važan aspekt metodologije projektovanja. Potraga za harmoničnim odnosima
-    između čoveka, prostora i prirode formira dizajn koji odiše balansom prisustva i praznine, duha i materije.
-    Svaki projekat je promišljen odgovor na kontekst, prožet osećajem pripadanja, ritma i suštine.
+    <h4 class="h4">{{"UPPERTEXT.HEADER3"|translate}}</h4>
+    <p [innerHTML]="'UPPERTEXT.PAR3'|translate">
   </p>
-  <a routerLink="/portfolio">Vise o nasim proizvodima</a>
+  <a routerLink="/portfolio">{{"UPPERTEXT.LINK3"|translate}}</a>
 </div>
 </div>
 <br>
@@ -64,17 +53,17 @@
     <div class="images_">
       <div class="images_each"><img src="../../assets/slike/Aks2.jpg">
         <div class="images_text">
-          <p (click)="scrollToEnterijer()">ENTERIJER PO MERI</p>
+          <p (click)="scrollToEnterijer()">{{"IMAGES.IMG1"|translate}}</p>
         </div>
       </div>
       <div class="images_each"><img src="../../assets/slike/namestaj_po_meri_1.png">
         <div class="images_text">
-          <p (click)="scrollToEnterijer()">NAMESTAJ PO MERI</p>
+          <p (click)="scrollToEnterijer()">{{"IMAGES.IMG2"|translate}}</p>
         </div>
       </div>
       <div class="images_each"><img src="../../assets/slike/usluge.jpg">
         <div class="images_text">
-          <p (click)="scrollToUsluge()">NASE USLUGE</p>
+          <p (click)="scrollToUsluge()">{{"IMAGES.IMG3"|translate}}</p>
         </div>
       </div>
     </div>

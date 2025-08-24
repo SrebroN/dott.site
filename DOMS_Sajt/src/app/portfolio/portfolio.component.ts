@@ -1,15 +1,22 @@
 
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-
+import {TranslateModule, TranslateService} from '@ngx-translate/core'
 @Component({
   selector: 'app-portfolio',
-  imports: [],
+  imports: [CommonModule,TranslateModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })
 export class PortfolioComponent implements OnInit{
-  constructor (private router:Router){}
+  constructor (private router:Router, private translate:TranslateService){
+    translate.addLangs(['en', 'sr']);
+    translate.setFallbackLang('sr');
+
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang?.match(/en|sr/) ? browserLang : 'sr');
+  }
   ngOnInit(){
     this.router.events.subscribe((event)=>{
       if(!(event instanceof NavigationEnd)){

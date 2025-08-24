@@ -1,0 +1,74 @@
+{
+  "Q1": {
+    "QUESTION1": "Conceptual Design (IDR) Service",
+    "ANSWER1": "The conceptual design represents the basic concept of the building, prepared for the purpose of obtaining location conditions. It contains key data required to verify compliance with the planning document and to define the conditions for further design and infrastructural connections – such as purpose, gross floor area, dimensions, regulation, plot positioning, access, number of units, and methods of connection to the utility network."
+  },
+  "Q2": {
+    "QUESTION2": "Preliminary Design (IDP) Service",
+    "ANSWER2": "The preliminary design defines the purpose, form, capacity, and technical characteristics of the building, with a demonstration of compliance with location requirements and planning documents. It is prepared for the purpose of feasibility studies and obtaining approval for construction works, in accordance with the Law on Planning and Construction."
+  },
+  "Q3": {
+    "QUESTION3": "Building Permit Project (PGD) Service",
+    "ANSWER3": "The building permit project defines the purpose, form, capacity, and technical characteristics of the building, with a demonstration of compliance with location requirements and planning documents. It is prepared for the purpose of feasibility studies and obtaining approval for construction works, in accordance with the Law on Planning and Construction."
+  },
+  "Q4": {
+    "QUESTION4": "Execution Design (PZI) Service",
+    "ANSWER4": "The building permit project is a set of coordinated designs that define the position, capacity, structure, installations, and equipment of the building, in accordance with location conditions and applicable regulations. It elaborates on the concept from the initial design, ensuring alignment of key parameters such as purpose, gross floor area, regulation, positioning, and infrastructural connections."
+  },
+  "Q5": {
+    "QUESTION5": "As-Built Design (PIO) Service",
+    "ANSWER5": "The as-built design is prepared for the purpose of obtaining an occupancy permit. It represents a set of coordinated projects that display all details of the constructed building necessary to verify its suitability for use."
+  },
+  "Q6": {
+    "QUESTION6": "Construction Supervision and Management Service",
+    "ANSWER6": ""
+  },
+  "Q7": {
+    "QUESTION7": "Comprehensive Documentation Service – from Conceptual Design to Occupancy Permit",
+    "ANSWER7": ""
+  },
+  "Q21": {
+    "QUESTION21": "Consultation",
+    "ANSWER21": ["Site visit – up to 2 hours",
+    "Two layout plans with furniture arrangement",
+    "<i>Online consultations also available by agreement with the client, provided a floor plan is available</i>"
+  ]
+  },
+  "Q22": {
+    "QUESTION22": "Décor",
+    "ANSWER22": ["Design without renovation",
+    "Site visit",
+    "Moodboard (colors, materials, textures)",
+    "Selection of textiles (curtains, decorative pillows, throws)",
+    "Selection of décor (vases, tableware, rugs)"]
+  },
+  "Q23": {
+    "QUESTION23": "Interior Preliminary Design",
+    "ANSWER23": ["Site visit",
+    "Moodboard",
+    "3D visualization",
+    "Two layout options with furniture arrangement",
+    "Complete interior design project"]
+  },
+  "Q24": {
+    "QUESTION24": "Complete Interior Design",
+    "ANSWER24": ["Site visit",
+    "Moodboard",
+    "3D visualization",
+    "Two layout options with furniture arrangement",
+    "Complete interior design project (demolition plan, wall plan, flooring plan, ceiling plan, lighting and switch plan, socket plan, plumbing and sanitary plan, wall elevations, finishing materials specification (wallpaper and tiles), sanitary equipment specification, lighting specification, upholstered furniture specification)",
+    "Custom furniture design (carpentry drawings)"]
+  },
+  "Q25": {
+    "QUESTION25": "Complete Interior Design + Supervision Service",
+    "ANSWER25": ["Site visit",
+    "Moodboard",
+    "3D visualization",
+    "Two layout options with furniture arrangement",
+    "Complete interior design project (demolition plan, wall plan, flooring plan, ceiling plan, lighting and switch plan, socket plan, plumbing and sanitary plan, wall elevations, finishing materials specification (wallpaper and tiles), sanitary equipment specification, lighting specification, upholstered furniture specification)",
+    "Custom furniture design (carpentry drawings)",
+    "Supervision, procurement of materials, cost estimation and budgeting",
+    "Procurement of necessary equipment and materials",
+    "Communication with contractors"]
+  }
+}

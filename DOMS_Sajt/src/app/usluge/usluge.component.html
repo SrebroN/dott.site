@@ -21,10 +21,10 @@
         @for (item of items; track item; let i = $index) {
           <li>
             <div (click)="toggle(i)">
-              <h3>{{item.question}}</h3>
+              <h3>{{item.question |translate}}</h3>
             </div>
             <div [@expandCollapse]="activeIndex === i ? 'expanded' : 'collapsed'" class="faq-answer">
-              {{item.answer}}
+              {{item.answer |translate}}
             </div>
           </li>
         }
@@ -39,12 +39,9 @@
         @for (item of items2; track item; let i = $index) {
           <li>
             <div (click)="toggle2(i)">
-              <h3 class="faq-question">{{item.question}}</h3>
+              <h3 class="faq-question">{{item.question|translate}}</h3>
             </div>
-            <ul [@expandCollapse]="activeIndex2 === i ? 'expanded' : 'collapsed'" class="faq-answer">
-              @for (ans of item.answer; track ans) {
-                <li>{{ans}}</li>
-              }
+            <ul [@expandCollapse]="activeIndex2 === i ? 'expanded' : 'collapsed'" class="faq-answer"[innerHTML]="item.answer |translate">
             </ul>
           </li>
         }

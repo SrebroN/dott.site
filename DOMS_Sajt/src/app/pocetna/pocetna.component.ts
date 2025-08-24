@@ -3,12 +3,13 @@ import { NavigationEnd, Router } from '@angular/router';
 import { RouterLink } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { ViewportScroller } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { AppComponent } from '../app.component';
+import {TranslateModule, TranslateService} from '@ngx-translate/core'
 @Component({
   selector: 'app-pocetna',
   standalone: true,
-  imports: [RouterLink, MatIconModule],
+  imports: [RouterLink, MatIconModule, CommonModule, TranslateModule],
   templateUrl: './pocetna.component.html',
   styleUrl: './pocetna.component.css',
   animations: [
@@ -26,7 +27,13 @@ import { AppComponent } from '../app.component';
 
 export class PocetnaComponent implements OnInit, OnDestroy {
   viewportScroller: any;
-  constructor(private router: Router, private scroller: ViewportScroller) { }
+  constructor(private router: Router, private scroller: ViewportScroller, private translate: TranslateService) {
+        translate.addLangs(['en', 'sr']);
+    translate.setFallbackLang('sr');
+
+    const browserLang = translate.getBrowserLang();
+    translate.use(browserLang?.match(/en|sr/) ? browserLang : 'sr');
+   }
   images: string[] = [
     "assets/slike/slideshow_1.jpg",
     "assets/slike/slideshow_2.jpg",
