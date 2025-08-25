@@ -9,8 +9,10 @@
     <a class="hover-underline" routerLink="/usluge"(click)="toggleMenuRouter()">{{"HEADER.SERVICES"|translate}}</a>
     <a class="hover-underline" routerLink="/portfolio"(click)="toggleMenuRouter()">{{"HEADER.PORTFOLIO"|translate}}</a>
     <a class="hover-underline" (click)="toggleMenuRouter()"(click)="scrollToKontakt()">{{"HEADER.CONTACT"|translate}}</a>
-    <a class="hover-underline" (click)="switchLang('sr')">sr</a>
-    <a class="hover-underline" (click)="switchLang('en')">en</a>
+    <a class="hover-underline" (click)="toggleMenuRouter()">
+      <span (click)="switchLang()" [class.active-lang]="currLang === 'sr'">SR / </span>
+      <span (click)="switchLang()" [class.active-lang]="currLang === 'en'">EN</span>
+    </a>
   </div>
 
 </nav>
@@ -31,7 +33,7 @@
     <p>{{"FOOTER.RIGHTS"|translate}}</p>
   </div>
   <div class="footer-center">
-    <img src="../assets/slike/LOGO.jpg" alt="dott." id="logo_footer">&nbsp;&nbsp;
+    <img src="../assets/slike/LOGO.jpg" alt="dott."(click)="scrollLogo()" id="logo_footer">&nbsp;&nbsp;
   </div>
   <div class="footer-right">
     <p>{{"FOOTER.CONTACT"|translate}}<a href="tel:+381691214278">+381 691 21 4278</a>

@@ -14,17 +14,20 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class AppComponent implements OnInit {
   title = 'app';
   showTopButton: boolean = false;
+  currLang:string;
   constructor(private scroller: ViewportScroller, private router: Router, private translate:TranslateService) {
     translate.addLangs(['en', 'sr']);
     translate.setFallbackLang('sr');
 
     const browserLang = translate.getBrowserLang();
     translate.use(browserLang?.match(/en|sr/) ? browserLang : 'sr');
+    this.currLang=(browserLang?.match(/en|sr/) ? browserLang : 'sr');
   }
 
-  switchLang(lang:string){
-    this.translate.use(lang);
-  //  localStorage.setItem('lang', lang);
+  switchLang(){
+    this.currLang=(this.currLang==='en'?'sr':'en');
+    this.translate.use(this.currLang);
+    localStorage.setItem('lang', this.currLang);
   }
 
   ngOnInit() {

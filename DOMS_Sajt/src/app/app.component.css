@@ -26,7 +26,9 @@
   margin-left: 60px;
   cursor: pointer;
 }
-
+.active-lang {
+  font-weight: bold;
+}
 router-outlet {
   display: block;
   padding-top: 60px;
@@ -104,6 +106,7 @@ a:active {
   color: #ffffff;
   height: 100px;
   display: grid;
+  cursor:pointer;
 }
 
 .footer-right p {
@@ -172,6 +175,7 @@ a:active {
     flex-direction: column;
     padding: 2rem 5%;
     text-align: center;
+    cursor:pointer;
   }
 
   .footer-left,

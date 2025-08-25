@@ -1,4 +1,14 @@
-{
+{"SERVICES":{
+  "HEAD":"SERVICES",
+  "BUILDINGDESIGN":"Building design",
+  "BUILDINGDESIGNTEXT":"The process of designing a building unfolds through several stages, each involving the preparation of a specific set of project documentation. In line with this, we offer the development of the following documentation packages:",
+  "INTERIORDESIGN":"Interior Design",
+  "PROJECTLEGALIZATION":"Project Legalization",
+  "PROJECTLEGALIZATIONTEXT":"The procedure and method of legalizing buildings, or parts of buildings, constructed without a building permit or approval.<br><br><b>Technical documentation required for the legalization process includes:</b><ul><li>Report on the current condition of the building</li><li>Geodetic survey study</li></ul>",
+  "ENERGYEFFICENCY":"Energy Efficiency",
+  "ENERGYEFFICENCYTEXT":"Energy efficiency encompasses a set of measures we take to reduce energy consumption. An Energy Efficiency Study is an essential component in the process of obtaining a building permit."
+},
+
   "Q1": {
     "QUESTION1": "Conceptual Design (IDR) Service",
     "ANSWER1": "The conceptual design represents the basic concept of the building, prepared for the purpose of obtaining location conditions. It contains key data required to verify compliance with the planning document and to define the conditions for further design and infrastructural connections – such as purpose, gross floor area, dimensions, regulation, plot positioning, access, number of units, and methods of connection to the utility network."

@@ -1,4 +1,16 @@
-{"Q1":{
+{"SERVICES":{
+  "HEAD":"USLUGE",
+  "BUILDINGDESIGN":"Projektovanje objekata",
+  "BUILDINGDESIGNTEXT":"Projektovanje objekta obuhvata nekoliko faza, pri čemu svaka podrazumeva izradu određene vrste projektne dokumentacije. U skladu s tim, nudimo izradu sledećih dokumentacionih celina:",
+  "INTERIORDESIGN":"Projektovanje enterijera",
+  "PROJECTLEGALIZATION":"Ozakonjenje projekata",
+  "PROJECTLEGALIZATIONTEXT":"Postupak i način ozakonjenja objekata, odnosno delova objekta izgrađenih bez građevinske dozvole, odnosno odobrenja za izgradnju.<br><br><b>Tehnička dokumentacija potrebna za postupak ozakonjenja objekta:</b><ul><li>Izveštaj o zatečenom stanju objekta</li><li>Elaborat geodetskih radova</li></ul>",
+  "ENERGYEFFICENCY":"Energetska efikasnost",
+  "ENERGYEFFICENCYTEXT":"Energetska efikasnost podrazumeva niz mera koje preduzimamo u cilju smanjenja potrošnje energije. Elaborat energerske efikasnosti je neophodna stavka u procesu dobijanja građevinske dozvole"
+},
+
+
+  "Q1":{
   "QUESTION1":"Usluga izrade IDR - Idejnog rešenja",
   "ANSWER1":"Idejno rešenje predstavlja osnovnu koncepciju objekta, izrađenu radi pribavljanja lokacijskih uslova. Sadrži ključne podatke potrebne za proveru usklađenosti sa planskim dokumentom i definisanje uslova za dalje projektovanje i infrastrukturno priključenje – poput namene, BRGP-a, gabarita, regulacije, položaja na parceli, pristupa, broja jedinica i načina priključenja na komunalnu mrežu."
 },

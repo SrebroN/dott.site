@@ -87,6 +87,13 @@ body.loaded app-root {
 }
 
 @font-face {
+  font-family: "sherian";
+  src: url(assets/fonts/sherian/Sherian-Thin.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Mansfield";
   src: url(assets/fonts/Mansfield/Mansfield.ttf);
   font-weight: normal;
