@@ -9,7 +9,7 @@
     <a class="hover-underline" routerLink="/usluge"(click)="toggleMenuRouter()">{{"HEADER.SERVICES"|translate}}</a>
     <a class="hover-underline" routerLink="/portfolio"(click)="toggleMenuRouter()">{{"HEADER.PORTFOLIO"|translate}}</a>
     <a class="hover-underline" (click)="toggleMenuRouter()"(click)="scrollToKontakt()">{{"HEADER.CONTACT"|translate}}</a>
-    <a class="hover-underline" (click)="toggleMenuRouter()">
+    <a class="hover-underline" (click)="toggleMenuRouterNoScroll()">
       <span (click)="switchLang()" [class.active-lang]="currLang === 'sr'">SR / </span>
       <span (click)="switchLang()" [class.active-lang]="currLang === 'en'">EN</span>
     </a>

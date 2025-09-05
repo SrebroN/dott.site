@@ -98,5 +98,7 @@
 }
 
 @media screen and (max-width:768px){
-
+.bottom_container_picture img{
+    display:none;
+}
 }
