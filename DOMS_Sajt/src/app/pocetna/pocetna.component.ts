@@ -35,10 +35,10 @@ export class PocetnaComponent implements OnInit, OnDestroy {
     translate.use(browserLang?.match(/en|sr/) ? browserLang : 'sr');
    }
   images: string[] = [
-    "assets/slike/slideshow_1.jpg",
-    "assets/slike/slideshow_2.jpg",
-    "assets/slike/dnevna.jpg",
-    "assets/slike/Aks2.jpg"
+    "assets/slike/slideshow_1.webp",
+    "assets/slike/slideshow_2.webp",
+    "assets/slike/dnevna.webp",
+    "assets/slike/Aks2.webp"
   ]
   currentIndex = 0;
   intervalId: any;
